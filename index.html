@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!--https://placehold.co/400x400-->
-<html lang="en">
+<html lang="zxx">
     <head>
         <title>Home - Lorem Ipsum</title>
 
@@ -14,53 +14,131 @@
         <link rel="stylesheet" href="css/style.css" type="text/css">
     </head>
     <body>
-        <header>
-            <a href="index.html" id="logo">
-                <img src="img/logo1.png">
-            </a>
-            <nav id="top">
-                <ul>
-                    <li>
-                        <a href="index.html">Home</a>
-                    </li>
-                    <li>
-                        <a href="products.html">Portfolio</a>
-                    </li>
-                    <li>
-                        <a href="about.html">About</a>
-                    </li>
-                    <li>
-                        <a href="#" class="yellow">Contact</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-        <main>
-            <section id="headline" class="grey">
-                <picture>
-                    <img src="img/parachute-4078833_640small.jpg" alt="photo of a person parachuting over snowy mountains">
-                    <source srcset="img/parachute-4078833_1280large.jpg">
-                </picture>
-                <h1>Compelling headline</h1>
-                <article>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                </article>
-                <a href="#" class="yellow">Learn more about our services</a>
-            </section>
+        <div id="gridcontainer">
+        <!--Header-->
+            <header>
+                <a href="index.html" class="hovedlogo">
+                    <img src="img/logo1.png" alt="company logo">
+                </a>
+                <nav id="top">
+                    <ul>
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="products.html">Portfolio</a>
+                        </li>
+                        <li>
+                            <a href="about.html">About</a>
+                        </li>
+                        <li>
+                            <!--Legge til intern lenke-->
+                            <a href="about.html" class="yellow">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+        <!--Main-->
+            <main>
+                <section id="headline" class="grey">
 
-            <section id="subheading">
-                <h2>Engaging subheading. What can you help your visitors with?</h2>
-                <article>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                </article>
-            </section>
+                        <picture>
+                            <source media="(min-width: 600px)" srcset="img/parachute-4078833_1280large.jpg">
+                            <img src="img/parachute-4078833_640small.jpg" alt="photo of a person parachuting over snowy mountains">
+                        </picture>
 
-            <section id=""
-        </main>
-        <footer>
+                        <h1>Compelling headline</h1>
+                    <article>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </p>
+                    </article>
+                    <a href="about.html" class="yellow">Learn more about our services</a>
+                </section>
 
-        </footer>
+                <section id="subheading" class="white">
+                    <h2>Engaging subheading. What can you help your visitors with?</h2>
+                    <article>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </p>
+                    </article>
+                </section>
+
+                <section id="aboutsection" class="yellow">
+                    <img src="https://placehold.co/400x400" alt="">
+                    <h2>About our company</h2>
+                    <article>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </p>
+                    </article>
+                    <a href="about.html" class="thickoutline">Read more about us</a>
+                </section>
+
+                <section id="ourservices" class="white">
+                    <h2>Our services</h2>
+                    <article>
+                        <article>
+                            <h3>Branding</h3>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        </article>
+
+                        <article>
+                            <h3>Design</h3>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        </article>
+
+                        <article>
+                            <h3>Development</h3>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        </article>
+
+                        <article>
+                            <h3>Support</h3>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        </article>
+                    </article>
+                </section>
+            </main>
+        <!--Aside-->
+            <aside>
+                <h4>Sign up for our newsletter</h4>
+                <form method="post">
+                        <input type="email" id="newsletter" name="newsletter">
+                    <label for="signup" class="yellow">
+                        <input type="submit" value="Sign me up" id="signup">
+                    </label>
+                </form>
+            </aside>
+        <!--Footer-->
+            <footer>
+                <a href="index.html" class="hovedlogo">
+                    <img src="img/logo1.png" alt="company logo">
+                </a>
+                <p>
+                    Company copyright 2023
+                </p>
+                <a href="https://www.facebook.com/">
+                    Facebook
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a href="https://www.instagram.com/">
+                    Instagram
+                    <i class="fa-brands fa-square-instagram"></i>
+                </a>
+                <a href="https://www.linkedin.com/">
+                    Linkedin
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+            </footer>
+        </div>
     </body>
 </html>
