@@ -33,14 +33,123 @@
                     </li>
                     <li>
                         <!--Legge til intern lenke-->
-                        <a href="about.html" class="yellow">Contact</a>
+                        <a href="about.html#contactlink" class="yellow">Contact</a>
                     </li>
                 </ul>
             </nav>
         </header>
         <!--main-->
             <main>
+                <section id="portfolio">
+                    <picture>
+                        <source media="(min-width: 600px)" srcset="img/office-large.jpg">
+                        <img src="img/office-small.jpg" alt="photo of office supplies, computer, phone, notebook and pen.">
+                    </picture>
 
+                    <article>
+                        <p>Company name</p>
+                        <h1>About our company</h1>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                             Urna nec tincidunt praesent semper feugiat nibh sed. Morbi blandit cursus risus at ultrices mi tempus imperdiet nulla.
+                              Posuere sollicitudin aliquam ultrices sagittis orci a scelerisque purus. Consequat id porta nibh venenatis cras sed.
+                               Tellus id interdum velit laoreet id. Mauris cursus mattis molestie a iaculis at.
+                        </p>
+                        <a href="#contactus" class="yellow">Get in touch with us</a>
+                    </article>
+                </section>
+                <section id=ourservices>
+                    <h2>Our Services</h2>
+                    <section>
+                        <i class="fa-solid fa-users"></i>
+                        <h3>Branding</h3>
+                        <p>
+                            nullam ac tortor vitae purus faucibus ornare suspendisse sed nisi
+                        </p>
+                    </section>
+                    <section>
+                        <i class="fa-solid fa-cloud-arrow-up"></i>
+                        <h3>Branding</h3>
+                        <p>
+                            nullam ac tortor vitae purus faucibus ornare suspendisse sed nisi
+                        </p>
+                    </section>
+                    <section>
+                        <i class="fa-solid fa-code"></i>
+                        <h3>Branding</h3>
+                        <p>
+                            nullam ac tortor vitae purus faucibus ornare suspendisse sed nisi
+                        </p>
+                    </section>
+                    <section>
+                        <i class="fa-solid fa-wifi"></i>
+                        <h3>Branding</h3>
+                        <p>
+                            nullam ac tortor vitae purus faucibus ornare suspendisse sed nisi
+                        </p>
+                    </section>
+                </section>
+
+                <section id="clients" class="yellow">
+                    <h2>Some of our clients</h2>
+                    <img src="img/logo1.png" alt="company logo 1">
+                    <img src="img/logo2.png" alt="company logo 2">
+                    <img src="img/logo3.png" alt="company logo 3">
+                </section>
+
+                <section id="contactus" class="grey">
+<!---->
+                    <a id="contactlink"></a>
+                    <h2>Contact us</h2>
+                    <form>
+                        <h3>Send us a message</h3>
+                        <p>
+                        <label for="name">Name</label>
+                        <input type="text" id="name">
+                        </p>
+
+                        <p>
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject">
+                        </p>
+
+                        <p>
+                        <label for="message">Message</label>
+                        <textarea id="message"></textarea>
+                        </p>
+
+                        <p>
+                        <label for="sendmessage">
+                        <input type="submit" id="sendmessage" value="Send message">
+                         </label>
+                        </p>
+                    </form>
+
+                    <section id="contactinfo">
+                        <h3>Contact information</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                             Sed faucibus turpis in eu. 
+                             Tincidunt nunc pulvinar sapien et ligula ullamcorper.
+                        </p>
+                        <p>
+                        <i class="fa-solid fa-location-pin"></i>
+                        B R A veien 4, 1757 Halden
+                        </p>
+                        <p>
+                        <i class="fa-solid fa-phone"></i>
+                        69 60 80 00
+                        </p>
+                        <p>
+                        <i class="fa-solid fa-envelope"></i>
+                        <a href="#">postmottak@hiof.no</a>
+                        </p>
+                    </section>
+                </section>
+                
+                <section id="map">
+                    <img src="eksamen-kart.jpg" alt="Map showing location of company.">
+                </section>
             </main>
         <!--footer-->
             <footer>
