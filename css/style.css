@@ -1,0 +1,14 @@
+@charset "UTF-8";
+/*lys grå: #F7F7F7*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700;900&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  list-style: none;
+}
+body .yellow {
+  background-color: #e6bd43;
+}/*# sourceMappingURL=style.css.map */
