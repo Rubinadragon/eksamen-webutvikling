@@ -5,10 +5,143 @@
     box-sizing: border-box;
 }
 
+#gridcontainer{
+    display:grid;
+}
+
 body{
-    font-family: 'Roboto', sans-serif;;
-    list-style: none;
+    font-family: 'Roboto', sans-serif;
+    
+    /*Farger*/
     .yellow{
         background-color: #e6bd43;
+    }
+    .grey{
+        background-color: #F7F7F7
+    }
+    .transparent{
+        opacity: 0.7;
+    }
+
+    .hovedlogo {
+        justify-content: center;
+        display: flex;
+        img{
+            max-width: 100px;
+        }
+      }
+
+    .textoverimg{
+      position: relative;
+      text-align: center;
+      img{
+        min-height: 400px;
+        min-width: 100%;
+        object-fit: cover;
+      }
+        .textcontainer {
+            position: absolute;
+        }
+     }
+     .textimgside{
+        position: relative;
+          article{
+
+          }
+       }
+
+    a{
+        color:#000000;
+        text-decoration: none;
+    }
+    img{
+        max-width: 100%;
+        height: auto;
+    }
+    nav{
+        ul{
+            li{
+                list-style: none;
+            }
+        }
+    }
+
+    /*Header*/
+    header{
+        background-color: #fff;
+        display:flex;
+        flex-wrap:wrap;
+        nav{
+            ul{
+                display: flex;
+                justify-content: center;
+                flex-wrap:wrap;
+                gap: 1.2rem;
+                text-align: center;
+
+                .yellow{
+                    padding: 0.7rem 1rem;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+
+    /*Main*/
+    main{
+
+    }
+    aside{
+
+    }
+
+    /*footer*/
+    footer{
+        background-color: #252525;
+        color: #fff;
+        .fa-brands{
+            color:#fff;
+        }
+    }
+
+}
+
+/*Mobil*/
+@media only screen and (max-width: 499px){
+    header{
+        flex-direction: column;
+        .hovedlogo{
+            padding: 2rem 0 1rem;
+        }
+        nav{
+            padding: 0 0 1rem;
+            ul{
+                flex-direction:column;
+                padding:0;
+            }
+        }
+    }
+
+
+    .textoverimg{
+        .textcontainer{
+            top: 50px;
+            padding: 1rem;
+        }
+    }
+}
+
+/*Desktop*/
+@media only screen and (min-width: 500px){
+    header{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items:center;
+        padding: 1rem;
+    }
+    .textoverimg{
+        .textcontainer {
+           top: 80px;
+         }
     }
 }

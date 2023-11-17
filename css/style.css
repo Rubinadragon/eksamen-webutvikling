@@ -5,10 +5,113 @@
   box-sizing: border-box;
 }
 
+#gridcontainer {
+  display: grid;
+}
+
 body {
   font-family: "Roboto", sans-serif;
-  list-style: none;
+  /*Farger*/
+  /*Header*/
+  /*Main*/
+  /*footer*/
 }
 body .yellow {
   background-color: #e6bd43;
+}
+body .grey {
+  background-color: #F7F7F7;
+}
+body .transparent {
+  opacity: 0.7;
+}
+body .hovedlogo {
+  justify-content: center;
+  display: flex;
+}
+body .hovedlogo img {
+  max-width: 100px;
+}
+body .textoverimg {
+  position: relative;
+  text-align: center;
+}
+body .textoverimg img {
+  min-height: 400px;
+  min-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+body .textoverimg .textcontainer {
+  position: absolute;
+}
+body .textimgside {
+  position: relative;
+}
+body a {
+  color: #000000;
+  text-decoration: none;
+}
+body img {
+  max-width: 100%;
+  height: auto;
+}
+body nav ul li {
+  list-style: none;
+}
+body header {
+  background-color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+}
+body header nav ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+  text-align: center;
+}
+body header nav ul .yellow {
+  padding: 0.7rem 1rem;
+  font-weight: 600;
+}
+body footer {
+  background-color: #252525;
+  color: #fff;
+}
+body footer .fa-brands {
+  color: #fff;
+}
+
+/*Mobil*/
+@media only screen and (max-width: 499px) {
+  header {
+    flex-direction: column;
+  }
+  header .hovedlogo {
+    padding: 2rem 0 1rem;
+  }
+  header nav {
+    padding: 0 0 1rem;
+  }
+  header nav ul {
+    flex-direction: column;
+    padding: 0;
+  }
+  .textoverimg .textcontainer {
+    top: 50px;
+    padding: 1rem;
+  }
+}
+/*Desktop*/
+@media only screen and (min-width: 500px) {
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+  }
+  .textoverimg .textcontainer {
+    top: 80px;
+  }
 }/*# sourceMappingURL=style.css.map */
