@@ -13,8 +13,7 @@
         <link href="css/font/css/solid.css" rel="stylesheet">
         <link rel="stylesheet" href="css/style.css" type="text/css">
     </head>
-    <body>
-        <div id="gridcontainer">
+    <body id="gridcontainer">
         <!--header-->
         <header>
             <a href="index.html" class="hovedlogo">
@@ -29,7 +28,7 @@
                         <a href="products.html">Portfolio</a>
                     </li>
                     <li>
-                        <a href="about.html">About</a>
+                        <a href="about.html" id="thispage">About</a>
                     </li>
                     <li>
                         <!--Legge til intern lenke-->
@@ -41,23 +40,27 @@
         <!--main-->
             <main>
                 <section id="aboutourcomp" class="textoverimg">
+                    <article>
                     <picture>
-                        <source media="(min-width: 630px)" srcset="img/office-large.jpg">
-                        <img src="img/office-small.jpg" alt="photo of office supplies, computer, phone, notebook and pen.">
+                        <source media="(min-width: 800px)" srcset="img/office-large.jpg">
+                        <img src="img/office-small.jpg" alt="">
                     </picture>
-
-                    <article id="abouttext">
-                        <p>Company name</p>
-                        <h1>About our company</h1>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                             Urna nec tincidunt praesent semper feugiat nibh sed. Morbi blandit cursus risus at ultrices mi tempus imperdiet nulla.
-                              Posuere sollicitudin aliquam ultrices sagittis orci a scelerisque purus. Consequat id porta nibh venenatis cras sed.
-                               Tellus id interdum velit laoreet id. Mauris cursus mattis molestie a iaculis at.
-                        </p>
-                        <a href="#contactus" class="yellow">Get in touch with us</a>
+                        <div id="abouttext">
+                            <p>Company name</p>
+                            <h1>About our company</h1>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                Urna nec tincidunt praesent semper feugiat nibh sed. Morbi blandit cursus risus at ultrices mi tempus imperdiet nulla.
+                                Posuere sollicitudin aliquam ultrices sagittis orci a scelerisque purus. Consequat id porta nibh venenatis cras sed.
+                                Tellus id interdum velit laoreet id. Mauris cursus mattis molestie a iaculis at.
+                            </p>
+                            <p>
+                            <a href="#contactus" class="yellow">Get in touch with us</a>
+                            </p>
+                        </div>
                     </article>
                 </section>
+
                 <section id=ourservices>
                     <h2>Our Services</h2>
                     <section>
@@ -96,7 +99,9 @@
                     <img src="img/logo2.png" alt="company logo 2">
                     <img src="img/logo3.png" alt="company logo 3">
                 </section>
-
+            
+            </main>
+            <aside>
                 <section id="contactus" class="grey">
 <!---->
                     <a id="contactlink"></a>
@@ -150,9 +155,9 @@
                 <section id="map">
                     <img src="img/eksamen-kart.jpg" alt="Map showing location of company.">
                 </section>
-            </main>
+            </aside>
         <!--footer-->
-            <footer">
+            <footer>
                 <a href="index.html" class="hovedlogo">
                     <img src="img/logo1.png" alt="company logo">
                 </a>
@@ -171,6 +176,5 @@
                     </a>
                 </nav>
             </footer>
-        </div>
     </body>
 </html>

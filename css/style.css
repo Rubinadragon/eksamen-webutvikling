@@ -7,6 +7,7 @@
 
 #gridcontainer {
   display: grid;
+  max-width: 1600px;
 }
 
 body {
@@ -25,39 +26,17 @@ body .grey {
 body .transparent {
   opacity: 0.7;
 }
+body .thickoutline {
+  border-style: solid;
+  border-color: #000000;
+  border-width: 3px;
+  padding: 0.5rem 1rem;
+}
 body .hovedlogo {
-  justify-content: center;
   display: flex;
 }
 body .hovedlogo img {
   max-width: 100px;
-}
-body .textoverimg {
-  position: relative;
-  text-align: center;
-}
-body .textoverimg img {
-  min-height: 400px;
-  min-width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-body .textoverimg .textcontainer {
-  position: absolute;
-}
-body .textimgside {
-  position: relative;
-}
-body a {
-  color: #000000;
-  text-decoration: none;
-}
-body img {
-  max-width: 100%;
-  height: auto;
-}
-body nav ul li {
-  list-style: none;
 }
 body header {
   background-color: #fff;
@@ -75,6 +54,107 @@ body header nav ul .yellow {
   padding: 0.7rem 1rem;
   font-weight: 600;
 }
+body .textoverimg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  text-align: center;
+}
+body .textoverimg article {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  min-width: 100%;
+}
+body .textoverimg h1 {
+  font-size: 3em;
+}
+body .textoverimg picture {
+  min-width: 100%;
+}
+body .textoverimg img {
+  min-height: 480px;
+  min-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+body .textoverimg #textcontainer {
+  position: absolute;
+  padding: 10%;
+  gap: 3rem;
+  display: flex;
+  flex-direction: column;
+}
+body .textoverimg #textcontainer p {
+  margin: 0;
+}
+body .textoverimg #abouttext {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  position: absolute;
+  text-align: start;
+  background-color: #fff;
+  padding: 2rem;
+}
+body .textoverimg #centertext {
+  position: absolute;
+}
+body .textoverimg .yellow {
+  padding: 1rem;
+}
+body #subheading {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  padding: 3rem;
+}
+body #subheading article {
+  max-width: 80%;
+}
+body #aboutsection {
+  padding: 1rem;
+}
+body #aboutsection img {
+  max-width: 300px;
+}
+body #aboutsection article {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2% 4%;
+}
+body #aboutsection article p {
+  max-width: 30rem;
+}
+body #ourservices {
+  padding: 3rem;
+}
+body #ourservices h2 {
+  text-align: center;
+}
+body #ourservices div {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+body #ourservices div .service p {
+  max-width: 15rem;
+}
+body a {
+  color: #000000;
+  text-decoration: none;
+}
+body img {
+  max-width: 100%;
+  height: auto;
+}
+body nav ul li {
+  list-style: none;
+}
 body footer {
   background-color: #252525;
   color: #fff;
@@ -84,12 +164,16 @@ body footer .fa-brands {
 }
 
 /*Mobil*/
-@media only screen and (max-width: 499px) {
+@media only screen and (max-width: 699px) {
+  #gridcontainer {
+    grid-template-columns: auto;
+  }
   header {
     flex-direction: column;
   }
   header .hovedlogo {
     padding: 2rem 0 1rem;
+    justify-content: center;
   }
   header nav {
     padding: 0 0 1rem;
@@ -102,16 +186,46 @@ body footer .fa-brands {
     top: 50px;
     padding: 1rem;
   }
+  .textoverimg #abouttext {
+    margin: 10%;
+  }
+  #aboutsection article {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  aside {
+    grid-column: 1/2;
+  }
 }
 /*Desktop*/
-@media only screen and (min-width: 500px) {
+@media only screen and (min-width: 700px) {
+  #gridcontainer {
+    grid-template-columns: auto auto auto;
+  }
   header {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
+    grid-column: 1/4;
   }
-  .textoverimg .textcontainer {
-    top: 80px;
+  main {
+    grid-column: 1/4;
+  }
+  .textoverimg #abouttext {
+    max-width: 50%;
+    margin: 5%;
+  }
+  #aboutsection article {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    gap: 5rem;
+    margin: 1rem;
+  }
+  aside {
+    grid-column: 1/4;
+  }
+  footer {
+    grid-column: 1/4;
   }
 }/*# sourceMappingURL=style.css.map */

@@ -13,8 +13,7 @@
         <link href="css/font/css/solid.css" rel="stylesheet">
         <link rel="stylesheet" href="css/style.css" type="text/css">
     </head>
-    <body>
-        <div id="gridcontainer">
+    <body id="gridcontainer">
         <!--Header-->
             <header>
                 <a href="index.html" class="hovedlogo">
@@ -23,7 +22,7 @@
                 <nav id="top">
                     <ul>
                         <li>
-                            <a href="index.html">Home</a>
+                            <a href="index.html" id="thispage">Home</a>
                         </li>
                         <li>
                             <a href="products.html">Portfolio</a>
@@ -41,12 +40,12 @@
         <!--Main-->
             <main>
                 <section id="headline" class="textoverimg">
-                    <article>
+                    <article id="articlecontainer">
                         <picture>
-                            <source media="(min-width: 630px)" srcset="img/parachute-large.jpg">
+                            <source media="(min-width: 800px)" srcset="img/parachute-large.jpg">
                             <img src="img/office-small.jpg" alt="" class="transparent">
                         </picture>
-                        <div class="textcontainer">
+                        <div id="textcontainer">
                             <h1>Compelling headline</h1>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                             Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
@@ -54,54 +53,66 @@
                                 <a href="about.html" class="yellow">Read more about our services</a>
                             </p>
                         </div>
-                </article>
+                    </article>
                 </section>
 
                 <section id="subheading" class="white">
                     <article>
                         <h2>Engaging subheading. What can you help your visitors with?</h2>
+                        <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                             Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </p>
                     </article>
                 </section>
 
                 <section id="aboutsection" class="yellow">
-                    <img src="https://placehold.co/400x400" alt="placeholder">
                     <article>
-                        <h2>About our company</h2>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        <img src="https://placehold.co/400x400" alt="placeholder">
+                        <div>
+                            <h2>About our company</h2>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            </p>
                             <p>
                                 <a href="about.html" class="thickoutline">Read more about us</a>
                             </p>
+                        </div>
                     </article>
                 </section>
 
                 <section id="ourservices" class="white">
                     <h2>Our services</h2>
-                        <section>
+                    <div>
+                        <section class="service">
                             <h3>Branding</h3>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed.
+                            </p>
                         </section>
 
-                        <section>
+                        <section class="service">
                             <h3>Design</h3>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed.
+                            </p>
                         </section>
 
-                        <section>
+                        <section class="service">
                             <h3>Development</h3>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed.
+                            </p>
                         </section>
 
-                        <section>
+                        <section class="service">
                             <h3>Support</h3>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed.
+                            </p>
                         </section>
+                    <div>
                 </section>
             </main>
         <!--Aside-->
@@ -138,6 +149,5 @@
                     </a>
                 </nav>
             </footer>
-        </div>
     </body>
 </html>
