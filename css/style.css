@@ -38,7 +38,6 @@ body .thickoutline {
 body .yellowline {
   border-width: 2px;
   border-style: none none solid none;
-  padding: 0.5rem;
   border-color: #e6bd43;
   font-weight: 600;
 }
@@ -141,14 +140,19 @@ body #aboutsection article p {
 body #ourservices {
   padding: 3rem;
 }
+body #ourservices .fa-solid {
+  font-size: 2rem;
+  color: #000000;
+}
 body #ourservices h2 {
   text-align: center;
+  min-width: 100%;
 }
 body #ourservices div {
   text-align: center;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 body #ourservices div .service p {
   max-width: 15rem;
@@ -166,10 +170,45 @@ body input, body textarea {
   border: none;
   padding: 0.7rem 1rem;
 }
-body #explore nav ul {
+body #explorecontainer {
+  padding: 3%;
+}
+body #explorecontainer .yellowline {
+  padding: 0.5rem;
+}
+body #explorecontainer #explore nav {
+  padding: 1rem;
+}
+body #explorecontainer #explore nav ul {
   display: flex;
   gap: 2rem;
   flex-wrap: wrap;
+}
+body .products {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+body .products .yellowline {
+  min-width: 100%;
+}
+body .products article {
+  flex-grow: 3;
+  display: flex;
+  flex-direction: column;
+  max-width: 692px;
+}
+body #clients {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem;
+  padding: 3rem;
+}
+body #clients h2 {
+  min-width: 100%;
+  text-align: center;
+  font-size: 2rem;
 }
 body a {
   color: #000000;
@@ -181,6 +220,9 @@ body img {
 }
 body nav ul li {
   list-style: none;
+}
+body h2 {
+  font-size: 1.5rem;
 }
 body footer {
   background-color: #252525;
@@ -233,7 +275,7 @@ body footer nav .fa-brands {
     flex-direction: column;
     flex-wrap: wrap;
   }
-  .yellowline {
+  #explorecontainer .yellowline {
     font-size: 1.5rem;
   }
   aside {
@@ -268,7 +310,7 @@ body footer nav .fa-brands {
     gap: 5rem;
     margin: 1rem;
   }
-  .yellowline {
+  .products .yellowline {
     font-size: 2rem;
   }
   aside {

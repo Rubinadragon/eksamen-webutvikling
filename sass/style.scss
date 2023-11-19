@@ -35,7 +35,6 @@ body{
     .yellowline {
         border-width: 2px;
         border-style: none none solid none;
-        padding: 0.5rem;
         border-color: #e6bd43;
         font-weight: 600;
     }
@@ -149,14 +148,20 @@ body{
 
     #ourservices{
         padding: 3rem;
+        .fa-solid{
+            font-size: 2rem;
+            color:#000000;
+        }
         h2{
             text-align:center;
+            min-width: 100%;
         }
+
         div{
             text-align: center;
             display: flex;
             flex-wrap: wrap;
-            justify-content: center;
+            justify-content: space-evenly;
             .service{
                 p{
                     max-width: 15rem;
@@ -179,16 +184,54 @@ body{
         padding: 0.7rem 1rem;
     }
 
-    #explore{
-        nav{
-            ul{
-                display: flex;
-                gap: 2rem;
-                flex-wrap:wrap;
+    #explorecontainer {
+        .yellowline{
+            padding: 0.5rem;
+        }
+        padding: 3%;
+        #explore{
+            nav{
+                padding: 1rem;
+                ul{
+                    display: flex;
+                    gap: 2rem;
+                    flex-wrap:wrap;
+                }
             }
         }
     }
 
+    .products {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        .yellowline{
+            min-width: 100%;
+        }
+        article {
+            flex-grow: 3;
+            display: flex;
+            flex-direction: column;
+            max-width: 692px;
+        }
+    }
+
+    #clients{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 3rem;
+        padding: 3rem;
+        h2{
+            min-width: 100%;
+            text-align:center;
+            font-size:2rem;
+        }
+    }
+
+    #contactinfo{
+        
+    }
 
     a{
         color:#000000;
@@ -205,6 +248,9 @@ body{
                 list-style: none;
             }
         }
+    }
+    h2{
+        font-size: 1.5rem;
     }
 
     /*footer*/
@@ -269,9 +315,10 @@ body{
             flex-wrap: wrap;
         }
     }
-
-    .yellowline{
-        font-size: 1.5rem;
+    #explorecontainer{
+        .yellowline{
+            font-size: 1.5rem;
+        }
     }
 
     aside{
@@ -313,9 +360,10 @@ body{
             margin: 1rem;
         }
     }
-
-    .yellowline{
-        font-size: 2rem;
+    .products{
+        .yellowline{
+            font-size: 2rem;
+        }
     }
 
     aside{
