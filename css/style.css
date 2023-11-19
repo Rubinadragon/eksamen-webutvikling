@@ -21,7 +21,10 @@ body .yellow {
   background-color: #e6bd43;
 }
 body .grey {
-  background-color: #F7F7F7;
+  background-color: #f3f0f1;
+}
+body .white {
+  background-color: #fff;
 }
 body .transparent {
   opacity: 0.7;
@@ -29,8 +32,15 @@ body .transparent {
 body .thickoutline {
   border-style: solid;
   border-color: #000000;
-  border-width: 3px;
+  border-width: 2px;
   padding: 0.5rem 1rem;
+}
+body .yellowline {
+  border-width: 2px;
+  border-style: none none solid none;
+  padding: 0.5rem;
+  border-color: #e6bd43;
+  font-weight: 600;
 }
 body .hovedlogo {
   display: flex;
@@ -39,7 +49,6 @@ body .hovedlogo img {
   max-width: 100px;
 }
 body header {
-  background-color: #fff;
   display: flex;
   flex-wrap: wrap;
 }
@@ -95,7 +104,7 @@ body .textoverimg #abouttext {
   flex-direction: column;
   position: absolute;
   text-align: start;
-  background-color: #fff;
+  background: rgba(255, 255, 255, 0.6);
   padding: 2rem;
 }
 body .textoverimg #centertext {
@@ -144,6 +153,24 @@ body #ourservices div {
 body #ourservices div .service p {
   max-width: 15rem;
 }
+body #emailsignup {
+  display: flex;
+  justify-content: center;
+  padding: 3rem;
+}
+body #emailsignup p {
+  font-size: 1.87rem;
+  font-weight: 600;
+}
+body input, body textarea {
+  border: none;
+  padding: 0.7rem 1rem;
+}
+body #explore nav ul {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
 body a {
   color: #000000;
   text-decoration: none;
@@ -158,8 +185,21 @@ body nav ul li {
 body footer {
   background-color: #252525;
   color: #fff;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 3rem 1rem;
 }
-body footer .fa-brands {
+body footer p {
+  font-weight: 300;
+}
+body footer nav {
+  gap: 1rem;
+  display: flex;
+}
+body footer nav .fa-brands {
+  font-size: 2.5rem;
   color: #fff;
 }
 
@@ -168,12 +208,12 @@ body footer .fa-brands {
   #gridcontainer {
     grid-template-columns: auto;
   }
-  header {
-    flex-direction: column;
-  }
-  header .hovedlogo {
+  .hovedlogo {
     padding: 2rem 0 1rem;
     justify-content: center;
+  }
+  header {
+    flex-direction: column;
   }
   header nav {
     padding: 0 0 1rem;
@@ -193,8 +233,14 @@ body footer .fa-brands {
     flex-direction: column;
     flex-wrap: wrap;
   }
+  .yellowline {
+    font-size: 1.5rem;
+  }
   aside {
     grid-column: 1/2;
+  }
+  footer {
+    justify-content: center;
   }
 }
 /*Desktop*/
@@ -222,10 +268,14 @@ body footer .fa-brands {
     gap: 5rem;
     margin: 1rem;
   }
+  .yellowline {
+    font-size: 2rem;
+  }
   aside {
     grid-column: 1/4;
   }
   footer {
     grid-column: 1/4;
+    justify-content: space-between;
   }
 }/*# sourceMappingURL=style.css.map */
