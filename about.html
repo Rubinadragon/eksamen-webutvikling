@@ -4,8 +4,19 @@
     <head>
         <title>About - Lorem ipsum</title>
 
+        <!--Metadata-->
         <meta charset="utf-8">
         <meta name="viewport" content= "width=device-width, initial-scale=1.0"> 
+        <meta name="description" content="About company name">
+        <meta name="author" content="Lorem Ipsum">
+
+        <!--Facebook metadata-->
+        <meta property="og:title" content="Company name - about us">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="">
+        <meta property="og:image" content="img/office-small.jpg">
+        <meta property="og:description" content="About company name, read more about us here.">
+        <meta property="og:locale" content="en_us">
         
         <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" type="text/css">
         <link href="css/font/css/fontawesome.css" rel="stylesheet">
@@ -16,7 +27,7 @@
     <body id="gridcontainer">
         <!--header-->
         <header class="white">
-            <a href="index.html" class="hovedlogo">
+            <a href="index.html" class="hovedlogo" tabindex="0">
                 <img src="img/logo1.png" alt="company logo">
             </a>
             <nav id="top">
@@ -32,25 +43,26 @@
                     </li>
                     <li>
                         <!--Legge til intern lenke-->
-                        <a href="about.html#contactlink" class="yellow">Contact</a>
+                        <a href="about.html#contactus" class="yellow">Contact</a>
                     </li>
                 </ul>
             </nav>
     </header>
         <!--main-->
             <main>
-                <section id="aboutourcomp" class="textoverimg">
+                <section class="textoverimg">
                     <article>
                     <picture>
                         <source media="(min-width: 800px)" srcset="img/office-large.jpg">
                         <img src="img/office-small.jpg" alt="">
+                        <!--Disse bildene er pynt, trenger derfor ikke noe i alt-taggen-->
                             <!--Image by <a href=https://pixabay.com/users/picjumbo_com-2130229/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=865091>
                             free stock photos from www.picjumbo.com</a> from 
                             <a href=https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=865091>Pixabay</a>-->
                     </picture>
-                        <div id="abouttext">
+                        <div id="abouttext" tabindex="0">
                             <p>Company name</p>
-                            <h1>About our company</h1>
+                            <h1 >About our company</h1>
                             <p>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                                 Urna nec tincidunt praesent semper feugiat nibh sed. Morbi blandit cursus risus at ultrices mi tempus imperdiet nulla.
@@ -67,7 +79,7 @@
                 <section id=ourservices>
                     <h2>Our Services</h2>
                     <div>
-                        <section class="service">
+                        <section tabindex="0">
                             <i class="fa-solid fa-users"></i>
                             <h3>Branding</h3>
                             <p>
@@ -75,7 +87,7 @@
                             </p>
                         </section>
 
-                        <section class="service">
+                        <section tabindex="0">
                             <i class="fa-solid fa-cloud-arrow-up"></i>
                             <h3>Branding</h3>
                             <p>
@@ -83,7 +95,7 @@
                             </p>
                         </section>
 
-                        <section class="service">
+                        <section tabindex="0">
                             <i class="fa-solid fa-code"></i>
                             <h3>Branding</h3>
                             <p>
@@ -91,7 +103,7 @@
                             </p>
                         </section>
 
-                        <section class="service">
+                        <section tabindex="0">
                             <i class="fa-solid fa-wifi"></i>
                             <h3>Branding</h3>
                             <p>
@@ -101,7 +113,7 @@
                     </div>
                 </section>
 
-                <section id="clients" class="yellow">
+                <section id="clients" class="yellow" tabindex="0">
                     <h2>Some of our clients</h2>
                     <img src="img/logo1.png" alt="company logo 1">
                     <img src="img/logo2.png" alt="company logo 2">
@@ -111,8 +123,6 @@
             </main>
             <aside>
                 <section id="contactus" class="grey">
-<!---->
-                    <a id="contactlink"></a>
                     <h2>Contact us</h2>
                     <form>
                         <h3>Send us a message</h3>
@@ -132,56 +142,56 @@
                         <textarea id="message"></textarea>
 
                         <p>
-                        <label for="sendmessage">
+                        <label for="sendmessage" aria-label="Send message">
                         <input type="submit" id="sendmessage" value="Send message" class="yellow">
                          </label>
                         </p>
                     </form>
 
-                    <section id="contactinfo">
+                    <section id="contactinfo" tabindex="0">
                         <h3>Contact information</h3>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                              Sed faucibus turpis in eu. 
                              Tincidunt nunc pulvinar sapien et ligula ullamcorper.
                         </p>
-                        <p>
+                        <p title="Address" tabindex="0">
                         <i class="fa-solid fa-location-pin"></i>
                         B R A veien 4, 1757 Halden
                         </p>
-                        <p>
+                        <p title="Phone number" tabindex="0">
                         <i class="fa-solid fa-phone"></i>
                         69 60 80 00
                         </p>
-                        <p>
+                        <p  title="Email">
                         <i class="fa-solid fa-envelope"></i>
                         <a href="#">postmottak@hiof.no</a>
                         </p>
                     </section>
                 </section>
          
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d8188.753758149571!2d11.3528033!3d59.1292475!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464412f0d344246f%3A0x4e47f19c99b253b1!2zSMO4Z3Nrb2xlbiBpIMOYc3Rmb2xk!5e0!3m2!1sno!2sno!4v1700578069658!5m2!1sno!2sno" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe title="Google maps page showing company location" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d8188.753758149571!2d11.3528033!3d59.1292475!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464412f0d344246f%3A0x4e47f19c99b253b1!2zSMO4Z3Nrb2xlbiBpIMOYc3Rmb2xk!5e0!3m2!1sno!2sno!4v1700578069658!5m2!1sno!2sno" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             
             </aside>
         <!--footer-->
-            <footer>
-                <a href="index.html" class="hovedlogo">
-                    <img src="img/logo1.png" alt="company logo">
+        <footer>
+            <a href="index.html" class="hovedlogo">
+                <img src="img/logo1.png" alt="company logo">
+            </a>
+            <p>
+                Companyrights companyname 2023
+            </p>
+            <nav>
+                <a href="https://www.facebook.com/" aria-label="Facebook">
+                    <i class="fa-brands fa-facebook"></i>
                 </a>
-                <p>
-                    Companyrights companyname 2023
-                </p>
-                <nav id="socialmedia">
-                    <a href="https://www.facebook.com/">
-                        <i class="fa-brands fa-facebook"></i>
-                    </a>
-                    <a href="https://www.instagram.com/">
-                        <i class="fa-brands fa-square-instagram"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/">
-                        <i class="fa-brands fa-linkedin"></i>
-                    </a>
-                </nav>
-            </footer>
+                <a href="https://www.instagram.com/" aria-label="Instagram">
+                    <i class="fa-brands fa-square-instagram"></i>
+                </a>
+                <a href="https://www.linkedin.com/" aria-label="Linkedin">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+            </nav>
+        </footer>
     </body>
 </html>

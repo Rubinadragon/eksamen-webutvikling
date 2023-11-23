@@ -32,12 +32,7 @@ body{
         border-width: 2px;
         padding: 0.5rem 1rem;
     }
-    .yellowline {
-        border-width: 2px;
-        border-style: none none solid none;
-        border-color: #e6bd43;
-        font-weight: 600;
-    }
+
 
     .hovedlogo {
         display: flex;
@@ -59,12 +54,22 @@ body{
                 gap: 1.2rem;
                 text-align: center;
 
+                li{
+                    font-weight: 200;
+                }
+
                 .yellow{
                     padding: 0.7rem 1rem;
                     font-weight: 600;
                 }
             }
         }
+    }
+    .yellowline {
+        border-width: 2px;
+        border-style: none none solid none;
+        border-color: #e6bd43;
+        font-weight: 600;
     }
 
     /*Main*/
@@ -89,6 +94,7 @@ body{
     img{
         min-height: 480px;
         min-width: 100%;
+        max-height: 600px;
         object-fit: cover;
     }
 
@@ -162,7 +168,7 @@ body{
             display: flex;
             flex-wrap: wrap;
             justify-content: space-evenly;
-            .service{
+            section{
                 p{
                     max-width: 15rem;
                 }
@@ -254,6 +260,9 @@ body{
                 padding: 0 0.3rem;
             }
         }
+        .yellow{
+           
+        }
     }
 
     iframe{
@@ -343,6 +352,13 @@ body{
             flex-wrap: wrap;
         }
     }
+
+    #abouttext{
+        h1{
+            margin: 0;
+        }
+    }
+
     #explorecontainer{
         .yellowline{
             font-size: 1.5rem;
@@ -351,11 +367,13 @@ body{
 
     aside{
         grid-column: 1/2;
+
         form{
-            padding: 0 11rem 0 0;
+            padding: 0 1rem 0;
             display: flex;
-            flex-wrap: wrap;
+            flex-direction: column;
             justify-content: center;
+            min-width: 90%;
             input{
                 padding: 0.7rem 20%;
             }
@@ -365,6 +383,9 @@ body{
             textarea{
                 padding: 2rem 20%;
             }
+        }
+        #contactinfo{
+           min-width: 100%; 
         }
 
     }
@@ -413,11 +434,16 @@ body{
     aside{
         grid-column: 1/4;
 
-        form{
-            padding: 0 11rem 0 0;
-            input{
-                padding: 0.7rem 50%;
+        #contactus{
+            form{
+                padding: 0 11rem 1rem 0;
+                input{
+                    padding: 0.7rem 50%;
+                }
             }
+        }
+
+        form{
             #sendmessage{
                 padding: 1rem;
             }

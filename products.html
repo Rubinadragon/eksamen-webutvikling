@@ -6,6 +6,16 @@
 
         <meta charset="utf-8">
         <meta name="viewport" content= "width=device-width, initial-scale=1.0"> 
+        <meta name="description" content="Company name products">
+        <meta name="author" content="Lorem Ipsum">
+
+        <!--Facebook metadata-->
+        <meta property="og:title" content="Company name - our products">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="">
+        <meta property="og:image" content="img/office-small.jpg">
+        <meta property="og:description" content="Have a look at products products from company name">
+        <meta property="og:locale" content="en_us">
         
         <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" type="text/css">
         <link href="css/font/css/fontawesome.css" rel="stylesheet">
@@ -16,7 +26,7 @@
     <body id="gridcontainer">
         <!--header-->
         <header class="white">
-            <a href="index.html" class="hovedlogo">
+            <a href="index.html" class="hovedlogo" tabindex="0">
                 <img src="img/logo1.png" alt="company logo">
             </a>
             <nav id="top">
@@ -32,17 +42,18 @@
                     </li>
                     <li>
                         <!--Legge til intern lenke-->
-                        <a href="about.html#contactlink" class="yellow">Contact</a>
+                        <a href="about.html#contactus" class="yellow">Contact</a>
                     </li>
                 </ul>
             </nav>
     </header>
         <!--Main-->
             <main>
-                <section id="portfolio" class="textoverimg">
+                <section class="textoverimg" tabindex="0">
                     <picture class="transparent">
                         <source media="(min-width: 800px)" srcset="img/office-large.jpg">
                         <img src="img/office-small.jpg" alt="photo of office supplies, computer, phone, notebook and pen.">
+                        <!--Disse bildene er pynt, trenger derfor ikke noe i alt-taggen-->
                             <!--Image by <a href=https://pixabay.com/users/picjumbo_com-2130229/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=865091>
                             free stock photos from www.picjumbo.com</a> from 
                             <a href=https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=865091>Pixabay</a>-->
@@ -51,7 +62,7 @@
                 </section>
 
             <div id="explorecontainer" class="white">
-                <section id="explore">
+                <section id="explore" tabindex="0">
                     <h2 class="yellowline">Explore previous jobs</h2>
                     <nav>
                         <ul>
@@ -69,7 +80,8 @@
                     </nav>
                 </section>
 
-                <section class="products" id="branding" class="white">
+                <section class="products white" tabindex="0">
+                    <!--I et nettsted som faktisk skal brukes, ville disse bildene trengt en mer beskrivende alt-tekst, men siden dette er placeholderbilder, skriver jeg "placeholder i alt-attributtene."-->
                     <h2 class="yellowline">Branding</h2>
                     <article>
                         <img src="https://placehold.co/400x400" alt="placeholder">
@@ -89,7 +101,7 @@
                     </article>
                 </section>
 
-                <section class="products" id="design" class="white">
+                <section class="products white" tabindex="0">
                     <h2 class="yellowline">Design</h2>
                     <article>
                         <img src="https://placehold.co/400x400" alt="placeholder">
@@ -105,7 +117,7 @@
                     </article>
                 </section>
 
-                <section class="products" id="development" class="white">
+                <section class="products white" tabindex="0">
                     <h2 class="yellowline">Development</h2>
                     <article>
                         <img src="https://placehold.co/400x400" alt="placeholder">
@@ -120,24 +132,24 @@
 
             </main>
         <!--footer-->
-            <footer>
-                <a href="index.html" class="hovedlogo">
-                    <img src="img/logo1.png" alt="company logo">
+        <footer>
+            <a href="index.html" class="hovedlogo">
+                <img src="img/logo1.png" alt="company logo">
+            </a>
+            <p>
+                Companyrights companyname 2023
+            </p>
+            <nav>
+                <a href="https://www.facebook.com/" aria-label="Facebook">
+                    <i class="fa-brands fa-facebook"></i>
                 </a>
-                <p>
-                    Companyrights companyname 2023
-                </p>
-                <nav id="socialmedia">
-                    <a href="https://www.facebook.com/">
-                        <i class="fa-brands fa-facebook"></i>
-                    </a>
-                    <a href="https://www.instagram.com/">
-                        <i class="fa-brands fa-square-instagram"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/">
-                        <i class="fa-brands fa-linkedin"></i>
-                    </a>
-                </nav>
-            </footer>
+                <a href="https://www.instagram.com/" aria-label="Instagram">
+                    <i class="fa-brands fa-square-instagram"></i>
+                </a>
+                <a href="https://www.linkedin.com/" aria-label="Linkedin">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+            </nav>
+        </footer>
     </body>
 </html>

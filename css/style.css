@@ -35,12 +35,6 @@ body .thickoutline {
   border-width: 2px;
   padding: 0.5rem 1rem;
 }
-body .yellowline {
-  border-width: 2px;
-  border-style: none none solid none;
-  border-color: #e6bd43;
-  font-weight: 600;
-}
 body .hovedlogo {
   display: flex;
 }
@@ -58,8 +52,17 @@ body header nav ul {
   gap: 1.2rem;
   text-align: center;
 }
+body header nav ul li {
+  font-weight: 200;
+}
 body header nav ul .yellow {
   padding: 0.7rem 1rem;
+  font-weight: 600;
+}
+body .yellowline {
+  border-width: 2px;
+  border-style: none none solid none;
+  border-color: #e6bd43;
   font-weight: 600;
 }
 body .textoverimg {
@@ -84,6 +87,7 @@ body .textoverimg picture {
 body .textoverimg img {
   min-height: 480px;
   min-width: 100%;
+  max-height: 600px;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -154,7 +158,7 @@ body #ourservices div {
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
-body #ourservices div .service p {
+body #ourservices div section p {
   max-width: 15rem;
 }
 body #emailsignup {
@@ -305,6 +309,9 @@ body footer nav .fa-brands {
     flex-direction: column;
     flex-wrap: wrap;
   }
+  #abouttext h1 {
+    margin: 0;
+  }
   #explorecontainer .yellowline {
     font-size: 1.5rem;
   }
@@ -312,10 +319,11 @@ body footer nav .fa-brands {
     grid-column: 1/2;
   }
   aside form {
-    padding: 0 11rem 0 0;
+    padding: 0 1rem 0;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
+    min-width: 90%;
   }
   aside form input {
     padding: 0.7rem 20%;
@@ -325,6 +333,9 @@ body footer nav .fa-brands {
   }
   aside form textarea {
     padding: 2rem 20%;
+  }
+  aside #contactinfo {
+    min-width: 100%;
   }
   footer {
     justify-content: center;
@@ -361,10 +372,10 @@ body footer nav .fa-brands {
   aside {
     grid-column: 1/4;
   }
-  aside form {
-    padding: 0 11rem 0 0;
+  aside #contactus form {
+    padding: 0 11rem 1rem 0;
   }
-  aside form input {
+  aside #contactus form input {
     padding: 0.7rem 50%;
   }
   aside form #sendmessage {
