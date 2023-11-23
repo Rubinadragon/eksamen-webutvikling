@@ -33,6 +33,15 @@ body{
         padding: 0.5rem 1rem;
     }
 
+    /*Hovereffekter*/
+    .yellow:hover {
+        background-color: #252525;
+        color:#e6bd43;
+    }
+    .thickoutline:hover{
+        background-color: #252525;
+        color:#e6bd43;
+    }
 
     .hovedlogo {
         display: flex;
@@ -137,6 +146,7 @@ body{
     }
 
     #aboutsection{
+        background-color: #e6bd43;
         padding: 1rem;
         img{
             max-width: 300px;
@@ -215,10 +225,18 @@ body{
             min-width: 100%;
         }
         article {
-            flex-grow: 3;
+            flex: 1 1 30%;
             display: flex;
             flex-direction: column;
+            margin: 4px;
             max-width: 692px;
+        }
+        article::before{
+            transform: scale(0);
+        }
+        article:hover{
+            transform: scale(1.1);
+            transition: transform 1s ease;
         }
     }
 
@@ -228,6 +246,7 @@ body{
         justify-content: center;
         gap: 3rem;
         padding: 3rem;
+        background-color: #e6bd43;
         h2{
             min-width: 100%;
             text-align:center;
