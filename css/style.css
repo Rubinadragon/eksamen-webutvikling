@@ -213,6 +213,7 @@ body .products article {
   flex-direction: column;
   margin: 4px;
   max-width: 692px;
+  min-width: 200px;
 }
 body .products article::before {
   transform: scale(0);
