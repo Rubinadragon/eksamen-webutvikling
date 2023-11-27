@@ -94,7 +94,7 @@ body .textoverimg picture {
   min-width: 100%;
 }
 body .textoverimg img {
-  min-height: 480px;
+  min-height: 400px;
   min-width: 100%;
   max-height: 600px;
   -o-object-fit: cover;
@@ -167,6 +167,7 @@ body #ourservices div {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  gap: 2rem;
 }
 body #ourservices div section p {
   max-width: 15rem;
@@ -231,7 +232,6 @@ body #clients {
 body #clients h2 {
   min-width: 100%;
   text-align: center;
-  font-size: 2rem;
 }
 body #contactus {
   display: flex;
@@ -374,6 +374,9 @@ body footer nav .fa-brands {
   }
   main {
     grid-column: 1/4;
+  }
+  main h2 {
+    font-size: 2rem;
   }
   .textoverimg #abouttext {
     max-width: 50%;
